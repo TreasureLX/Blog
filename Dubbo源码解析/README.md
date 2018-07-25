@@ -3,7 +3,19 @@ dubbo在分布式系统中扮演着服务治理的角色，对各种服务进行
 
 ## 总体概览
 
+![1532487057323](http://dubbo.apache.org/img/architecture.png)
 
+此图来自[dubbo官网](http://dubbo.apache.org/#!/?lang=zh-cn)，上图是dubbo框架的核心，我的博客会围绕这个图来详细分析每个模块。主要分为以下几个核心模块：
 
-![1532487057323](C:\Users\yinjian\AppData\Local\Temp\1532487057323.png)
+* #### Porvider服务注册过程
+
+* #### Consumer服务消费过程
+
+* #### LoadBanlance负载均衡策略
+
+* #### Directory目录服务 
+
+* #### Extension 扩展点机制
+
+上面列举出的只是几个核心的方面，其中会有一些细节我都会去详细阅读源码。本系列博客本着以点带面，从面到线原则，逐步深入理解dubbo原理，学习其核心思想。希望能给使用dubbo框架的朋友带来帮助，同时也不断提高自己的水平。
 
