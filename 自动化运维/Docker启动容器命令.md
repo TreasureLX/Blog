@@ -11,7 +11,7 @@
    ```shell
    #使用默认配置文件
    sudo docker run --name myredis -v /home/lanxing/data/docker/redis/data:/data -p 6379:6379  -d redis redis-server --appendonly yes
-   #使用自定义文件
+   #使用自定义配置文件
    sudo docker run --name myredis -v /home/lanxing/data/docker/redis/data:/data -v /home/lanxing/data/docker/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf  -p 6379:6379  -d redis:4.0.14 redis-server /usr/local/etc/redis/redis.conf  --appendonly yes
    ```
 
