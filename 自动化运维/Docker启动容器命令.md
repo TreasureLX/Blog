@@ -47,5 +47,13 @@
    gitlab/gitlab-ce:latest
    ```
 
-7. 
+7. 启动gitea
+
+   ```shell
+   docker run -d --name=gitea -p 22:22 -p 3000:3000 -v /home/lanxing/data/docker/gitea:/data gitea/gitea:latest
+   ```
+
+   
+
+   
 
