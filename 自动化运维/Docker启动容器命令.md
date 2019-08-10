@@ -47,5 +47,5 @@
    gitlab/gitlab-ce:latest
    ```
 
-   
+7. 
 
