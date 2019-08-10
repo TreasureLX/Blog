@@ -33,7 +33,19 @@
    sudo docker restart myredis
    ```
 
-   
+6. docker启动gitlab
+
+   ```shell
+   sudo docker run --detach \
+   --hostname gitlab.example.com \
+   --publish 443:443 --publish 80:80 --publish 22:22 \
+   --name gitlab \
+   --restart always \
+   --volume /home/lanxing/data/docker/gitlab/config:/etc/gitlab \
+   --volume /home/lanxing/data/docker/gitlab/logs:/var/log/gitlab \
+   --volume /home/lanxing/data/docker/gitlab/data:/var/opt/gitlab \
+   gitlab/gitlab-ce:latest
+   ```
 
    
 
